@@ -1,0 +1,22 @@
+{
+  "name": "coinybara",
+  "version": "1.0.0",
+  "description": "Learning blockchain.",
+  "main": "main.ts",
+  "scripts": {
+    "test": "dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jedrnow/blockchain.git"
+  },
+  "keywords": [
+    "blockchain"
+  ],
+  "author": "Jędrzej Nowaczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jedrnow/blockchain/issues"
+  },
+  "homepage": "https://github.com/jedrnow/blockchain#readme"
+}
