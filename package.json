@@ -1,22 +1,25 @@
 {
   "name": "coinybara",
   "version": "1.0.0",
-  "description": "Learning blockchain.",
-  "main": "main.ts",
+  "description": "",
+  "main": "app.ts",
   "scripts": {
-    "test": "dev"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tsc && node src/app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jedrnow/blockchain.git"
+    "url": "git+https://github.com/jedrnow/Coinybara.git"
   },
-  "keywords": [
-    "blockchain"
-  ],
-  "author": "Jędrzej Nowaczyk",
+  "author": "Jedrzej Nowaczyk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jedrnow/blockchain/issues"
+    "url": "https://github.com/jedrnow/Coinybara/issues"
   },
-  "homepage": "https://github.com/jedrnow/blockchain#readme"
+  "homepage": "https://github.com/jedrnow/Coinybara#readme",
+  "dependencies": {
+    "@types/node": "^18.11.9",
+    "js-sha256": "^0.9.0",
+    "typescript": "^4.8.4"
+  }
 }
