@@ -7,6 +7,7 @@ export interface BlockData{
     nonce: number;
     transactions: TransactionData[];
     key: string;
+    addTransaction(transaction: TransactionData): void;
 }
 
 export default class Block implements BlockData{

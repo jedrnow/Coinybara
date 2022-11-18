@@ -4,6 +4,7 @@ import { TransactionData } from "./transactions";
 
 export interface BlockChainData{
     blocks: BlockData[];
+    //difficulty: number;
     addBlock(block: BlockData): void;
     getNextBlock(transactions: TransactionData[]): BlockData;
     getPreviousBlock(): BlockData;
@@ -12,9 +13,11 @@ export interface BlockChainData{
 
 export default class Blockchain implements BlockChainData{
     public blocks: BlockData[];
+    //public difficulty: number;
 
     constructor(genesisBlock: BlockData){
         this.blocks = [];
+        //this.difficulty = 2;
         this.addBlock(genesisBlock);
     }
 
@@ -48,7 +51,7 @@ export default class Blockchain implements BlockChainData{
         let hash = sha256(block.key);
 
         // mining
-        while(!hash.startsWith('083a')){
+        while(!hash.startsWith('0')){ //083a
             block.nonce += 1;
             hash = sha256(block.key);
             console.log(hash);
