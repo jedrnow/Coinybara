@@ -54,7 +54,7 @@ export default class Blockchain implements BlockChainData{
         while(!hash.startsWith('0')){ //083a
             block.nonce += 1;
             hash = sha256(block.key);
-            console.log(hash);
+            //console.log(hash);
         }
         return hash;
     }
